@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package pb.v1;
+
+option go_package = "pkg/pb";
+
+import "google/protobuf/empty.proto";
+import "pb/v1/stream.proto";
+
+
+service StreamService{
+    //grpc server provide 2 services (rpc call)
+    rpc TimeInfo (google.protobuf.Empty) returns (stream CurrentTime) {}
+     
+}

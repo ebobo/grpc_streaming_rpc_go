@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package pb.v1;
+
+option go_package = "pkg/pb";
+
+message CurrentTime {
+    int32 message_id = 1;
+    string time_data = 2;
+ }
