@@ -1,4 +1,4 @@
-all: lint gen
+all: lint gen build
 
 lint:
 	@buf lint
